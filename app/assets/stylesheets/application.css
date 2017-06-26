@@ -416,3 +416,50 @@ footer img {
     padding-bottom: 1em;
     text-align: center;
 }
+
+@media(max-width: 1100px){
+    #perso > div > p {
+        font-size: 3em;
+    }
+
+    #formation > div > div > div > p {
+        font-size:4.5em;
+    }
+
+    #formation > div > div > div > div > p {
+        font-size: 3.2em;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    .modal p {
+        font-size: 3em;
+        padding-bottom:3em;
+    }
+
+    .modal h2 {
+        font-size: 8em;
+    }
+
+    .modal h3 {
+        font-size: 5em;
+    }
+
+    .modal-header .close {
+        font-size: 7em;
+    }
+
+    #contact a {
+        font-size:8.5em;
+    }
+
+    #contact p {
+        font-size: 5em;
+    }
+
+    footer {
+        font-size:4em;
+    }
+}

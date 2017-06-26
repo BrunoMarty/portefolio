@@ -36,7 +36,7 @@
   </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="formation">
 
-  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+  <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
     <h1>Mes Compétences</h1>
 
 
@@ -63,9 +63,9 @@
 
 
   </div>
-  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 parcours">
+  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 parcours">
     <h1>Mon Parcours</h1>
-    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
       <% @formations.each do |formation| %>
 
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -88,10 +88,10 @@
       </button>
       <h2 class="modal-title"></h2>
       <h3></h3>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <p></p>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <%= image_tag("takuzu.jpg") %>
       </div>
     </div>
@@ -99,14 +99,14 @@
 </div>
 
 
-<div class="col-md-12 col-sm-12 col-xs-12" id="folio">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="folio">
 
 
   <h1>Mon Portfolio</h1>
 
   <% @projects.each do |projet| %>
       <a data-toggle="modal" data-target="#popinLogin" onclick="reloadmodal('<%= projet.name %>', '<%= projet.content %>','<%= projet.image %>','<%= projet.techno %>')">
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" role="button">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" role="button">
           <div class="<%= projet.image %>">
 
             <div>
@@ -121,7 +121,7 @@
   <% end %>
 
   <a  href="https://github.com/BrunoMarty" target="blank">
-    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <div class="git">
         <div>
           <div>
@@ -133,30 +133,30 @@
   </a>
 
 </div>
-<div class="col-lg-12 col-md-6 col-sm-12 col-xs-12" id="contact">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
 
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
     <h1>Me Contacter</h1>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <a href="https://www.facebook.com/BrunoMarty34" target="_blank" class="fa fa-facebook-square" ></a>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <a href="https://twitter.com/MartyBruno4" target="_blank" class="fa fa-twitter-square"></a>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
       <a href="https://www.linkedin.com/in/bruno-marty-6a12a5135/" target="_blank" class="fa fa-linkedin-square" aria-hidden="true"></a>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="tomail">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="tomail">
       <a class="fa fa-envelope-square" aria-hidden="true"></a>
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="email">
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="email">
       <p>bruno.marty4@gmail.com</p>
     </div>
 
     <footer>Site conçu avec Ruby on Rails <%= image_tag("ruby.png", "width" => 30) %></footer>
 
   </div>
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <div class="col-lg-6 col-md-0 col-sm-0 col-xs-0">
 
   </div>
 
