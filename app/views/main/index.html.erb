@@ -1,0 +1,214 @@
+
+
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="index">
+  <%= image_tag("B1.png",:id => "B1") %>
+  <%= image_tag("B2.png",:id => "B2") %>
+  <%= image_tag("BM.png",:id => "BM") %>
+</div>
+
+
+
+
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="perso">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
+    <p><%= @home.find(1).text %><i ></i></p>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 white">
+    <p><%= @home.find(2).text %></p>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+      <a href="https://www.codingame.com" target="_blank"><%= image_tag("codingame.png","width" => 100) %></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+      <a href="https://battledev.blogdumoderateur.com" target="_blank"><%= image_tag("battledev.png","width" => 100) %></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+      <a href="https://afup.org" target="_blank"><%= image_tag("afupmeetup.png","width" => 100) %></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+      <a href="https://www.meetup.com" target="_blank"><%= image_tag("meetup.png","width" => 90) %></a>
+    </div>
+  </div>
+
+
+  </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="formation">
+
+  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+    <h1>Mes Compétences</h1>
+
+
+    <% @skills.each do |skill| %>
+
+        <% if skill.fk == nil %>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="<%= skill.name %>">
+              <div>
+                <p><i class="fa fa-sort-desc" aria-hidden="true"></i><%= skill.name %></p>
+                <div class="comp">
+                  <% @skills.each do |framework| %>
+
+                      <% if skill.id == framework.fk %>
+                          <p><%= framework.name %></p>
+                      <% end %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+        <% end %>
+
+
+    <% end %>
+
+
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 parcours">
+    <h1>Mon Parcours</h1>
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <% @formations.each do |formation| %>
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p><%= formation.nom %> <span><%= formation.date %></span></p>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 descrpars">
+            <p><%= formation.description %></p>
+          </div>
+
+
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="modal" id="popinLogin" role="dialog" aria-hidden="false">
+  <div  class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">
+        <span aria-hidden="true">×</span><span class="sr-only">Fermer</span>
+      </button>
+      <h2 class="modal-title"></h2>
+      <h3></h3>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <p></p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <%= image_tag("takuzu.jpg") %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12" id="folio">
+
+
+  <h1>Mon Portfolio</h1>
+
+  <% @projects.each do |projet| %>
+      <a data-toggle="modal" data-target="#popinLogin" onclick="reloadmodal('<%= projet.name %>', '<%= projet.content %>','<%= projet.image %>','<%= projet.techno %>')">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" role="button">
+          <div class="<%= projet.image %>">
+
+            <div>
+              <div>
+                <h2><%= projet.name %></h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </a>
+  <% end %>
+
+  <a  href="https://github.com/BrunoMarty" target="blank">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="git">
+        <div>
+          <div>
+            <h2>Mon Github</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</div>
+<div class="col-lg-12 col-md-6 col-sm-12 col-xs-12" id="contact">
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <h1>Me Contacter</h1>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <a href="https://www.facebook.com/BrunoMarty34" target="_blank" class="fa fa-facebook-square" ></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <a href="https://twitter.com/MartyBruno4" target="_blank" class="fa fa-twitter-square"></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <a href="https://www.linkedin.com/in/bruno-marty-6a12a5135/" target="_blank" class="fa fa-linkedin-square" aria-hidden="true"></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="tomail">
+      <a class="fa fa-envelope-square" aria-hidden="true"></a>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="email">
+      <p>bruno.marty4@gmail.com</p>
+    </div>
+
+    <footer>Site conçu avec Ruby on Rails <%= image_tag("ruby.png", "width" => 30) %></footer>
+
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+  </div>
+
+
+</div>
+
+  <script>
+
+      var tab = []
+      <% @tableau.each do |tab| %>
+      tab.push("<%= tab %>")
+      <% end %>
+      console.log(tab)
+      $.each(tab, function(index,value){
+          $('#'+value).css('background-image','url("/assets/'+value+'.png")')
+          console.log(value)
+      })
+
+
+      function reloadmodal(title, content, image, techno){
+          $('.modal img').attr('src','/assets/'+image+'.jpg');
+
+          $('.modal-title').html(title)
+          $('.modal p').html(content)
+          $('.modal h3').html(techno)
+          console.log(title)
+      }
+
+      $('#tomail').click(function () {
+          $('#email').slideToggle('slow')
+          $('#email').typist({
+              speed: 12,
+              text: 'Hello!\n'
+          })
+              .typistAdd('It\'s working!');
+      })
+
+      $(document).on('scroll', function() {
+          console.log($(this).scrollTop())
+          if($(this).scrollTop()>=$('#folio').position().top){
+              $('nav a').css("background-color","rgba(20,20,20,1")
+              $('nav a').css("color", "rgba(255,255,255,1)")
+          }
+          else if($(this).scrollTop()>=$('#perso').position().top+$('.black').height()){
+              $('nav a').css("background-color","rgba(255,255,255,1")
+              $('nav a').css("color", "rgba(20,20,20,1)")
+          }
+          else{
+              $('nav a').css("background-color","rgba(20,20,20,1")
+              $('nav a').css("color", "rgba(255,255,255,1)")
+          }
+      })
+
+
+  </script>

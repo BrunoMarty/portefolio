@@ -1,0 +1,418 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *= require bootstrap
+ /**= require font-awesome/css/font-awesome.min.css*/
+ *= require_tree .
+ *= require_self
+ */
+@font-face {
+    font-family: "Quantify";
+    src: url('Champagne & Limousines.ttf');
+}
+
+
+body {
+
+    font-family: Quantify;
+    background-image:url("/assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav {
+    top:2%;
+    right:2%;
+    position : fixed;
+    height:100%;
+    width:3em;
+    text-align:center;
+    z-index:111;
+}
+
+.container-fluid {
+    margin:0;
+    padding:0;
+}
+
+
+nav a {
+    background-color: rgba(20,20,20,1);
+    color:rgba(255,255,255,1);
+    line-height: 1.6em;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+}
+
+
+
+nav .fa {
+    line-height: 2em;
+    font-size: 2em;
+}
+
+#formation .fa {
+    padding-right:1em;
+}
+
+.glyphicon:hover, .fa:hover {
+    color:rgba(200,00,0,1);
+    text-decoration: none;
+}
+
+nav div {
+    float: left;
+    position: relative;
+    width: 20%;
+}
+
+
+#index {
+    background-color: rgba(20,20,20,1);
+
+}
+
+#index img{
+    margin-left:15%;
+    position:absolute;
+    padding-top : 20vh;
+    width: 30%;
+}
+#index #BM{
+    top:15vh;
+    margin-left:45%;
+}
+
+#perso > div > p {
+    font-size:1.6em;
+    padding: 10% 10% 0 10%;
+    text-align:justify;
+}
+
+#perso > div {
+    min-height:50%;
+}
+
+.black {
+    position: absolute;
+    left:0;
+    top:0;
+    background-color:  rgba(20,20,20,1);
+    color:white;
+}
+
+.white {
+    position: absolute;
+    right:0;
+    background-color:  white;
+    color: rgba(20,20,20,1);
+    bottom:0;
+}
+
+#perso {
+    background-color:rgba(150,20,20,0.2);
+    margin:0;
+    padding:0;
+    padding-top:50vh;
+}
+
+#formation {
+    background-color:rgba(255,255,255,1);
+}
+
+#formation > div > div {
+    margin:0.5em;
+    background-color:rgba(0,0,0,0.1);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 95%
+}
+
+
+#formation > div > div > div > p {
+    font-size: 1.7em;
+    padding-left:1vh;
+    padding-top:1vh;
+
+}
+#formation > div > div > div > div  {
+    display : none;
+    margin-left:2em;
+    border-left:2px solid white;
+    padding:1em;
+}
+
+#formation > div > div > div > div > p {
+    font-size: 1.3em;
+}
+
+
+#folio {
+
+background-color: rgba(20,20,20,1);
+}
+
+#contact {
+    padding:0;
+}
+
+#contact a {
+    line-height: 2em;
+    font-size: 2em;
+}
+
+#contact div:first-child {
+    background-color: rgba(20,20,20,1);
+    height:100vh;
+}
+
+#skill {
+    background-color:yellow;
+}
+
+
+.container-fluid > div {
+    min-height: 100vh;
+}
+
+#B1,#B2,#BM {
+    display:none;
+}
+
+h1 {
+    padding-bottom: 1em;
+    margin-top:0;
+    padding-top:1em;
+    text-align:center;
+}
+
+.parcours p {
+    font-size:1.7em;
+}
+
+.parcours div {
+    width: 100%;
+
+}
+
+.parcours span {
+    float: right;
+    font-size:0.7em;
+    line-height: 2.1em;
+}
+
+.descrpars {
+    font-size: 0.7em;
+    line-height: 0.7em;
+    margin-bottom: 2em;
+}
+
+.parcours > div > div > p {
+    margin-bottom: 0;
+}
+
+#folio {
+    color:white
+}
+
+
+#folio > a > div > div {
+    margin: 2em;
+}
+
+#folio  > a > div > div {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:50vh;
+
+}
+
+#folio  > a > div > div > div > div {
+    padding: 35% 10% 35% 10%;
+    width:100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#folio  > a > div > div:hover > div{
+    display: block;
+    background-color: rgba(0,0,0,0.9)
+}
+
+#folio  > a > div > div:hover > div > div > h2 {
+    display:block;
+}
+
+
+#folio h2 {
+    display: none;
+    margin: 0;
+    padding:0.5em 0 0 0;
+    text-align: center;
+}
+
+.fmc {
+    background-image: url("/assets/fmc.jpg");
+}
+
+.menuiserie {
+    background-image:url("/assets/menuiserie_min.jpg");
+}
+
+.takuzu {
+    background-image:url("/assets/takuzu_min.jpg");
+}
+
+.dvd {
+    background-image:url("/assets/dvd.jpg");
+}
+
+.git {
+    background-image:url("/assets/github.jpg");
+}
+
+
+#folio > a > div > div > div{
+    height:100%;
+    width:100%;
+    background-image: url("/assets/container.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 20;
+}
+
+#popinLogin {
+    height:100%;
+    width: 90%;
+    margin: 5%;
+}
+
+.modal img {
+    width: 100%;
+}
+
+.modal p {
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.modal h2 {
+    font-size:3em;
+}
+.modal h2, .modal h3 {
+    padding-bottom:1em;
+    text-align: center;
+}
+
+.modal > div {
+    margin:1em;
+}
+
+#folio a {
+    color :white;
+}
+
+::selection {
+    background: none;
+    color:red;
+}
+
+footer {
+    width:100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background-color:rgba(20,20,20,1);
+    color:white;
+    padding:0.5em;
+    font-size:1.5em;
+    text-align: center;
+}
+
+footer img {
+   margin-left: 1em;
+}
+
+#contact a {
+    font-size:5em;
+    color:rgba(255,255,255,0.7);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: none;
+}
+
+#contact > div > div {
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+#contact {
+    color:white;
+}
+
+#contact p {
+    font-size:2em;
+    line-height: 5em;
+}
+
+#email {
+    display:none;
+}
+
+#contact {
+    background-color: rgba(255,255,255,0.1);
+}
+
+#perso a {
+    font-size:5em;
+    color:rgba(200,0,0,1);;
+}
+
+#menu > div {
+    text-align: center;
+    width:100%;
+    height:10%;
+    min-height:10%;
+    padding:3em;
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    margin:0;
+    padding-top:6%;
+    background-image:url("/assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 100;
+}
+
+#menu a {
+    font-size: 2em;
+    color:white;
+}
+
+.white > div {
+    padding-bottom: 1em;
+    text-align: center;
+}
