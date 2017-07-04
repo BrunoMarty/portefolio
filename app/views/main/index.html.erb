@@ -90,8 +90,9 @@
       <h3></h3>
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <p></p>
+        <a>Lien du site en ligne</a>
       </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
         <%= image_tag("takuzu.jpg") %>
       </div>
     </div>
@@ -105,7 +106,7 @@
   <h1>Mon Portfolio</h1>
 
   <% @projects.each do |projet| %>
-      <a data-toggle="modal" data-target="#popinLogin" onclick="reloadmodal('<%= projet.name %>', '<%= projet.content %>','<%= projet.image %>','<%= projet.techno %>')">
+      <a data-toggle="modal" data-target="#popinLogin" onclick="reloadmodal('<%= projet.name %>', '<%= projet.content %>','<%= projet.image %>','<%= projet.techno %>','<%= projet.lien %>')">
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" role="button">
           <div class="<%= projet.image %>">
 
@@ -176,12 +177,13 @@
       })
 
 
-      function reloadmodal(title, content, image, techno){
+      function reloadmodal(title, content, image, techno, lien){
           $('.modal img').attr('src','/assets/'+image+'.jpg');
 
           $('.modal-title').html(title)
           $('.modal p').html(content)
           $('.modal h3').html(techno)
+          $(".modal a").attr("href", lien)
           console.log(title)
       }
 

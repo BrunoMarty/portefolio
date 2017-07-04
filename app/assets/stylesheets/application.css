@@ -283,6 +283,9 @@ h1 {
     background-image:url("/assets/github.jpg");
 }
 
+.hackmeup {
+    background-image:url("/assets/hackmeup_min.jpg");
+}
 
 #folio > a > div > div > div{
     height:100%;
@@ -301,7 +304,10 @@ h1 {
 }
 
 .modal img {
-    width: 100%;
+    max-width: 100%;
+    max-height:50vh;
+
+
 }
 
 .modal p {
@@ -416,6 +422,10 @@ footer img {
     padding-bottom: 1em;
     text-align: center;
 }
+.modal-header a {
+    font-size:2em;
+    color:rgba(200,0,0,1);
+}
 
 @media(max-width: 1100px){
     #perso > div > p {
@@ -446,6 +456,8 @@ footer img {
     .modal h3 {
         font-size: 5em;
     }
+
+
 
     .modal-header .close {
         font-size: 7em;
