@@ -12,7 +12,7 @@ J'ai réalisé mon portfolio en Ruby car c'est un langage que j'apprecie plus pa
 - Passenger (pour le deploiement sur le VPS)
 - FileZilla
 
-## Langages et Framework utilisés:
+## Langages et Framework utilisés:
 
 - Ruby 
 - Ruby on Rails 
