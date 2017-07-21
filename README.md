@@ -1,24 +1,25 @@
-# README
+# Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[URL du site](http://www.brunomarty.fr)
 
-Things you may want to cover:
+Ce projet est un projet personnel ayant pour but de me servir de CV et de pouvoir exposer mes compétences et les projets que j'ai déjà réalisés. 
+J'ai réalisé mon portfolio en Ruby car c'est un langage que j'apprecie plus particulièrement que ce site est censé me représenter le plus possible, donc j'ai fais ce choix.
 
-* Ruby version
+## Logiciels utilisés:
 
-* System dependencies
+- Rubymine (license étudiant)
+- DB Browser for SQLite
+- Passenger (pour le deploiement sur le VPS)
+- FileZilla
 
-* Configuration
+## Langages et Framework utilisés:
 
-* Database creation
+- Ruby 
+- Ruby on Rails 
+- Active Record (ORM de Rails)
+- Sqlite
+- JavaScript
+- Jquery
+- HTML / CSS
+- Bootstrap
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
